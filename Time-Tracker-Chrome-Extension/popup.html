@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tab Timer & Organizer</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding: 20px;
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f4f8; /* Light background for a modern look */
+        width: 400px; /* Set fixed width for the popup */
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .tab-info {
+        margin: 10px 0;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        background-color: #ffffff; /* White background for cards */
+        transition: transform 0.2s; /* Smooth scaling effect */
+      }
+      .tab-info:hover {
+        transform: translateY(-5px); /* Lift effect on hover */
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+      }
+      .btn-danger {
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+      .time-spent {
+        font-weight: bold;
+        color: #007bff; /* Blue color for the time spent */
+      }
+      .no-timers {
+        text-align: center;
+        color: #6c757d; /* Muted text for empty state */
+      }
+      .alert {
+        display: flex;
+        justify-content: space-between; /* Align text and time properly */
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="h5">Tab Timer</h1>
+      <p class="text-muted">Track your time efficiently</p>
+    </div>
+    <div id="tabList" class="mb-3"></div>
+    <button id="resetButton" class="btn btn-danger">Reset Timers</button>
+
+    <!-- Bootstrap JS and dependencies (optional for interactive components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
